@@ -72,3 +72,159 @@
 	text-decoration: none;
 	color: #a0ccf8
 }
+
+.focus-group{
+	margin-top: 3rem;
+	margin-bottom: 3.5rem;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gc-description{
+	margin-bottom: 5px;
+}
+
+.gc-label{
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	display: block;
+}
+
+.gc-label .required{
+	color: #D3080C;
+}
+
+/* checkbox css */
+.gc-input-checkbox{
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	margin-bottom: 26px;
+}
+
+.gc-input-checkbox__input{
+	transform: scale(2.5);
+}
+
+.gc-checkbox-label{
+	margin-top: 5px;
+	margin-left: 30px;
+	font-weight: 500;
+	font-family: "Noto Sans",sans-serif;
+	font-size: 20px;
+
+}
+
+/* radio button css */
+.gc-input-radio{
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	margin-bottom: 26px;
+}
+
+.gc-radio__input{
+	transform: scale(2.5);
+	margin-bottom: 26px;
+}
+
+.gc-radio-label{
+	margin-top: 5px;
+	margin-left: 30px;
+	font-weight: 500;
+	font-family: "Noto Sans",sans-serif;
+	font-size: 20px;
+}
+
+/* text input css */
+.gc-input-text{
+	margin-top: 3rem;
+	margin-bottom: 3.5rem;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.gc-text__input{
+	width: 100%;
+	max-width: 400px;
+	height: 4rem;
+	margin-top: 10px;
+	padding: 5px;
+	border-color: #202025;
+	border-style: solid;
+  	border-width: 1px;
+}
+
+@media (max-width: 500px) {
+    .gc-text__input {
+        width: 90%; /* or adjust accordingly */
+        height: 4rem; /* Adjust height for smaller screens */
+        margin-top: 5px; /* Adjust margin-top as needed */
+    }
+}
+
+
+/* text area css */
+.gc-textarea{
+	width: 80%;
+	max-width: 650px;
+    min-height: 150px;
+	resize: vertical;
+	margin-top: 10px;
+	padding: 5px;
+	border-color: #202025;
+	border-style: solid;
+  	border-width: 1px;
+}
+
+
+/* dropdown css */
+.gc-group{
+	width: 100%;
+}
+
+.gc-dropdown{
+	width: 80%;
+	max-width: 650px;
+	height: 4rem;
+	padding: 5px;
+	margin-top: 10px;
+	border-color: #202025;
+	border-style: solid;
+  	border-width: 1px;
+}
+
+.error{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+/* Submit button css */
+#SubmitButton{
+	background-color: #00703C;
+	width: 15rem;
+	height: 4rem;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+
+}
+
+
+/* fieldset,legend{
+	padding: 0;
+} */
+
+/* .gc-input-checkbox .gc-input-checkbox__input{
+	border-color: #0000;
+	border-width: 2px;
+
+} */
