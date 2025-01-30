@@ -1,0 +1,23 @@
+<div class="menu-banner">
+	<div class="container">
+		<nav class="gcweb-menu campaign-menu" typeof="SiteNavigationElement">
+			<h2 class="wb-inv">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+					{% if locale == "en" %}
+					<span class="wb-inv">{{ menu[locale].mainMenu }}
+					</span>Menu <span aria-hidden="true" class="expicon glyphicon glyphicon-chevron-down"></span>
+					{% else %}
+					Menu <span class="wb-inv">{{ menu[locale].mainMenu }}
+					</span>
+					<span aria-hidden="true" class="expicon glyphicon glyphicon-chevron-down"></span>
+					{% endif %}
+			</button>
+			<ul role="menu" aria-orientation="vertical">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/{{ locale }}/">{{ menu[locale].home }}</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/{{ locale }}/podcasts">{{ menu[locale].podcasts }}</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/{{ locale }}/events">{{ menu[locale].events }}</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="/{{ locale }}/newsletters">{{ menu[locale].newsletters }}</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
