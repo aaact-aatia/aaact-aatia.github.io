@@ -108,6 +108,7 @@ collections:
               - { label: "MP3 URL", name: "url", widget: "string", i18n: true, required: true }
               - { label: "Size (MB)", name: "sizeInMb", widget: "number", i18n: true, required: true }
           - label: "OGG (Optional)"
+            collapsed: true
             name: "ogg"
             widget: "object"
             i18n: true
