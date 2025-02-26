@@ -5,6 +5,8 @@
 {%- set toggleTag = "evenements" if locale == "en" else "events" -%}
 {%- elif tags and "newsletters" in tags -%}
 {%- set toggleTag = "infolettres" if locale == "en" else "newsletters" -%}
+{%- elif tags and "podcasts" in tags -%}
+{%- set toggleTag = "balados" if locale == "en" else "podcasts" -%}
 {%- endif -%}
 
 {%- set togglePage = otherLanguagePermalink if otherLanguagePermalink else ("/" ~ toggleTag if toggleTag else "") ~ "/" ~ (otherLanguageTitle | slugify) ~ "/" -%}
