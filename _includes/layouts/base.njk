@@ -14,7 +14,7 @@
 			<div class="container">
 				<h1 property="name" id="wb-cont">{{ title | safe }}</h1>
 				{%- if tags and "podcasts" in tags and eleventyExcludeFromCollections != true -%}
-					<p class="tagline"><strong>Release date:</strong> <span class="nowrap">{{ podcastDate }}</span></p>
+					<p class="tagline"><strong>{{ podcasts[locale].releaseDateText }}</strong> <span class="nowrap">{{ podcastDate }}</span></p>
 				{%- endif -%}
 				{%- if tagline -%}
 					<p class="tagline">{{ tagline | safe }}</p>

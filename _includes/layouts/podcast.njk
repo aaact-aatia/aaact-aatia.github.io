@@ -10,7 +10,7 @@
 		{%- if longDescription -%}
 		<div class="col-sm-10">
 			{{ longDescription | markdownify | safe }}
-			<p><strong>Duration:</strong> {{ duration }}</p>
+			<p><strong>{{ podcasts[locale].durationText }}</strong> {{ duration }}</p>
 		</div>
 		{% endif %}
 	</div>
@@ -23,12 +23,12 @@
 		</audio>
 	</figure>
 	<details>
-		<summary>Transcription: {{ title | safe }}</summary>
+		<summary>{{ podcasts[locale].transcriptionText }} {{ title | safe }}</summary>
 		{{ content | safe }}
 	</details>
-	<p class="mrgn-tp-lg lead"><a href="{{ mp3Link }}">Download {{ title | safe }} (MP3, $SIZEMB)</a></p>
+	<p class="mrgn-tp-lg lead"><a href="{{ mp3Link }}">{{ podcasts[locale].downloadText }} {{ title | safe }} (MP3, $SIZE<abbr title="{{ download[locale].MB }}">MB</abbr>)</a></p>
 	{%- if oggLink -%}
-		<p class="mrgn-tp-lg lead"><a href="{{ oggLink }}">Download {{ title | safe }} (OGG, $SIZEMB)</a></p>
+		<p class="mrgn-tp-lg lead"><a href="{{ oggLink }}">{{ podcasts[locale].downloadText }} {{ title | safe }} (OGG, $SIZE<abbr title="{{ download[locale].MB }}">MB</abbr>)</a></p>
 	{%- endif -%}
 
 {% endblock %}
