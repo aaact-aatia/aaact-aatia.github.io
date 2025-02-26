@@ -6,8 +6,8 @@ module.exports = {
 			link: "/accueil/"
 		}],
 		podcasts: [{
-			title: "Podcasts",
-			link: "/podcasts/"
+			title: "Balados",
+			link: "/balados/"
 		}],
 		events: [{
 			title: "Evenements",
