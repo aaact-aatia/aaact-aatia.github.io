@@ -13,12 +13,19 @@
 
 			<div class="container">
 				<h1 property="name" id="wb-cont">{{ title | safe }}</h1>
+				{%- if tags and "podcasts" in tags -%}
+					<p class="tagline"><strong>Release date:</strong> <span class="nowrap">{{ podcastDate }}</span></p>
+				{%- endif -%}
 				{%- if tagline -%}
 					<p class="tagline">{{ tagline | safe }}</p>
 				{%- endif -%}
 				{%- if description -%}<p class="description">{{ description | markdownify | safe }}</p>{%- endif -%}
 				{%- include "partials/alerts.njk" -%}
-				{{ content | safe }}
+
+				{% block content %}
+					{{ content | safe }}
+				{% endblock %}
+
 			</div>
 
 			{%- include "partials/pagedetails.njk" -%}

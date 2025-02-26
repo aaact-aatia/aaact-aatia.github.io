@@ -1,5 +1,6 @@
 {
 	"tags": [
 		"podcasts"
-	]
+	],
+	"layout": "layouts/podcast.njk"
 }

@@ -1,0 +1,34 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-sm-2">
+			<figure>
+				<img src="{{ image }}" alt="" class="img-responsive thumbnail" />
+			</figure>
+		</div>
+		{%- if longDescription -%}
+		<div class="col-sm-10">
+			{{ longDescription | markdownify | safe }}
+			<p>Duration: {{ duration }}</p>
+		</div>
+		{% endif %}
+	</div>
+	<figure class="wb-mltmd mrgn-bttm-md">
+		<audio title="{{ title | safe }}">
+			<source src="{{ mp3Link }}" type="audio/mp3">
+			{%- if oggLink -%}
+			<source src="{{ oggLink }}" type="audio/ogg">
+			{%- endif -%}
+		</audio>
+	</figure>
+	<details>
+		<summary>Transcription: {{ title | safe }}</summary>
+		{{ content | safe }}
+	</details>
+	<p class="mrgn-tp-lg lead"><a href="{{ mp3Link }}">Download {{ title | safe }} (MP3, $SIZEMB)</a></p>
+	{%- if oggLink -%}
+		<p class="mrgn-tp-lg lead"><a href="{{ oggLink }}">Download {{ title | safe }} (OGG, $SIZEMB)</a></p>
+	{%- endif -%}
+
+{% endblock %}
