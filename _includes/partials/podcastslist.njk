@@ -2,9 +2,18 @@
 <ul class="list-unstyled">
 		{%- for podcast in podcastslist -%}
 		<li>
-			<section>
-				<h3><a href="{{ podcast.url }}">{{ podcast.data.title }}</a></h3>
+			<section class="row">
+				<div class="col-sm-2">
+					<figure>
+						<img src="{{ podcast.data.image }}" alt="" class="img-responsive thumbnail" />
+					</figure>
+				</div>
+				<div class="col-sm-10">
+					<h3 class="mrgn-tp-0"><a href="{{ podcast.url }}">{{ podcast.data.title }}</a></h3>
+					<p class="tagline">{{ podcast.data.podcastDate }}</p>
 					<p>{{ podcast.data.description | markdownify | safe }}</p>
+					<p><strong>Duration:</strong> {{ podcast.data.duration }}</p>
+				</div>
 			</section>
 		</li>
 		{%- endfor -%}
