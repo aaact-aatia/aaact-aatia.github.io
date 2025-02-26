@@ -1,0 +1,11 @@
+
+<ul class="list-unstyled">
+		{%- for podcast in podcastslist -%}
+		<li>
+			<section>
+				<h3><a href="{{ podcast.url }}">{{ podcast.data.title }}</a></h3>
+					<p>{{ podcast.data.description | markdownify | safe }}</p>
+			</section>
+		</li>
+		{%- endfor -%}
+</ul>

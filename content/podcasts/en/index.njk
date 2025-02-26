@@ -1,0 +1,23 @@
+---
+title: AAACT Now for Accessibility Podcasts
+description: The AAACT Now for Accessibility podcast provides news and insights on digital accessibility so we can all contribute to disability inclusion.
+permalink: /podcasts/
+otherLanguagePermalink: /balados/
+eleventyExcludeFromCollections: true
+---
+
+<p><strong><a href="https://forms-formulaires.alpha.canada.ca/en/id/clwg9uutq012sx883m3l6gt8p">Subscribe to the AAACT Now for Accessibility Podcast</a></strong></p>
+
+<h2>Podcasts</h2>
+
+{# List all podcasts here #}
+{%- if collections.podcasts and collections.podcasts.length > 0 -%}
+	{%- set podcastslist = collections.podcasts | localeMatch(locale) -%}
+{%- if podcastslist and podcastslist.length > 0 -%}
+	{%- include "partials/podcastslist.njk" -%}
+{%- else -%}
+	There are no podcasts at the moment.
+{%- endif -%}
+{%- else -%}
+	There are no podcasts at the moment.
+{%- endif -%}
