@@ -103,14 +103,16 @@ collections:
           - label: "MP3 (Required)"
             name: "mp3"
             widget: "object"
+            i18n: true
             fields:
-              - { label: "MP3 URL", name: "url", widget: "string", required: true }
-              - { label: "Size (MB)", name: "sizeInMb", widget: "number", required: true }
+              - { label: "MP3 URL", name: "url", widget: "string", i18n: true, required: true }
+              - { label: "Size (MB)", name: "sizeInMb", widget: "number", i18n: true, required: true }
           - label: "OGG (Optional)"
             name: "ogg"
             widget: "object"
+            i18n: true
             required: false
             fields:
-              - { label: "OGG URL", name: "url", widget: "string", required: false }
-              - { label: "Size (MB)", name: "sizeInMb", widget: "number", required: false }
+              - { label: "OGG URL", name: "url", widget: "string", i18n: true, required: false }
+              - { label: "Size (MB)", name: "sizeInMb", widget: "number", i18n: true, required: false }
       - { label: "Transcript (required)", name: "body", widget: "markdown", i18n: true }
