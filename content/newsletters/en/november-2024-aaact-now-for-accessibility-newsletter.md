@@ -1,5 +1,5 @@
 ---
-title: November 2024 AAACT Now for Accessibility newsletter
+title: This November 2024 AAACT Now for Accessibility newsletter
 otherLanguageTitle: Infolettre de l'AATIA maintenant pour l'accessibilité de novembre 2024
 description: "**In this edition:** International Day of Persons with
   Disabilities; innovation fair wrap-up; how to make accessible Excel
