@@ -15,8 +15,11 @@ description: |
   We also meet with a member of the CRA’s marketing team, to talk about our efforts to inform Canadians about scams through the Be Scam Smart escape rooms you may have seen in malls across Canada in 2024.
 
 image: "/img/podcasts/CoverArtEnglishPurple.png"
-mp3Link: "https://www.canada.ca/content/dam/cra-arc/newsroom/pdcsts/txlgy-episode-5-en.mp3"
 duration: "24:01"
+podcastFiles:
+  mp3:
+    url: https://www.canada.ca/content/dam/cra-arc/newsroom/pdcsts/txlgy-episode-5-en.mp3
+    sizeInMb: 32
 ---
 
 **CC:** Hi, and welcome back to Taxology, the official podcast from the Canada Revenue Agency.

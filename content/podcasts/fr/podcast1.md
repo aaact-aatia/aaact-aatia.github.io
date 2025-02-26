@@ -13,8 +13,11 @@ description: |
 
   Nous rencontrons aussi un membre de l'équipe de marketing de l'Agence qui présente les efforts déployés pour informer les Canadiens au sujet des fraudes par l'intermédiaire du jeu d'évasion « Évitez les arnaques » que vous avez peut-être vu dans les centres commerciaux du Canada en 2024.
 image: "/img/podcasts/CoverArtPurpleFrench.png"
-mp3Link: "https://www.canada.ca/content/dam/cra-arc/newsroom/pdcsts/txlgy-episode-5-fr.mp3"
 duration: "24:01"
+podcastFiles:
+  mp3:
+    url: https://www.canada.ca/content/dam/cra-arc/newsroom/pdcsts/txlgy-episode-5-fr.mp3
+    sizeInMb: 32
 ---
 
 **CC:** Hi, and welcome back to Taxology, the official podcast from the Canada Revenue Agency.

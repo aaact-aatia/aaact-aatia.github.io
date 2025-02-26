@@ -16,9 +16,9 @@
 	</div>
 	<figure class="wb-mltmd mrgn-bttm-md">
 		<audio title="{{ title | safe }}">
-			<source src="{{ mp3Link }}" type="audio/mp3">
-			{%- if oggLink -%}
-			<source src="{{ oggLink }}" type="audio/ogg">
+			<source src="{{ podcastFiles.mp3.url }}" type="audio/mp3">
+			{%- if podcastFiles.ogg -%}
+			<source src="{{ podcastFiles.ogg.url }}" type="audio/ogg">
 			{%- endif -%}
 		</audio>
 	</figure>
@@ -26,9 +26,9 @@
 		<summary>{{ podcasts[locale].transcriptionText }} {{ title | safe }}</summary>
 		{{ content | safe }}
 	</details>
-	<p class="mrgn-tp-lg lead"><a href="{{ mp3Link }}">{{ podcasts[locale].downloadText }} {{ title | safe }} (MP3, $SIZE<abbr title="{{ download[locale].MB }}">MB</abbr>)</a></p>
-	{%- if oggLink -%}
-		<p class="mrgn-tp-lg lead"><a href="{{ oggLink }}">{{ podcasts[locale].downloadText }} {{ title | safe }} (OGG, $SIZE<abbr title="{{ download[locale].MB }}">MB</abbr>)</a></p>
+	<p class="mrgn-tp-lg lead"><a href="{{ podcastFiles.mp3.url }}">{{ podcasts[locale].downloadText }} {{ title | safe }} (MP3, {{ podcastFiles.mp3.sizeInMb }}<abbr title="{{ download[locale].MB }}">MB</abbr>)</a></p>
+	{%- if podcastFiles.ogg -%}
+		<p class="mrgn-tp-lg lead"><a href="{{ podcastFiles.ogg.url }}">{{ podcasts[locale].downloadText }} {{ title | safe }} (OGG, {{ podcastFiles.ogg.sizeInMb }}<abbr title="{{ download[locale].MB }}">MB</abbr>)</a></p>
 	{%- endif -%}
 
 {% endblock %}

@@ -90,11 +90,27 @@ collections:
     fields:
       - { label: "Title (required)", name: "title", widget: "string", i18n: true }
       - { label: "Other language title", name: "otherLanguageTitle", widget: "string", i18n: true }
-      - { label: "Published date (YYYY-MM-DD) (required)", name: "podcastDate", widget: "datetime", date_format: "YYYY-MM-DD", i18n: duplicate, required: false }
+      - { label: "Published date (YYYY-MM-DD) (required)", name: "podcastDate", widget: "datetime", date_format: "YYYY-MM-DD", i18n: duplicate }
       - { label: "Long description (required)", name: "longDescription", widget: "markdown", i18n: true }
       - { label: "Short description (required)", name: "description", widget: "markdown", i18n: true }
       - { label: "Image", name: "image", widget: "image", i18n: true, media_folder: "/public/img/podcasts", public_folder: "/img/podcasts" }
-      - { label: "MP3 file link (required)", name: "mp3Link", widget: "string", i18n: true }
-      - { label: "OGG file link", name: "oggLink", required: false, widget: "string", i18n: true }
       - { label: "Duration (required)", name: "duration", widget: "string", i18n: true }
-      - { label: "Transcript (required)", name: "body", widget: "markdown",  i18n: true }
+      - label: "Podcast Files"
+        name: "podcastFiles"
+        widget: "object"
+        i18n: true
+        fields:
+          - label: "MP3 (Required)"
+            name: "mp3"
+            widget: "object"
+            fields:
+              - { label: "MP3 URL", name: "url", widget: "string", required: true }
+              - { label: "Size (MB)", name: "sizeInMb", widget: "number", required: true }
+          - label: "OGG (Optional)"
+            name: "ogg"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "OGG URL", name: "url", widget: "string", required: false }
+              - { label: "Size (MB)", name: "sizeInMb", widget: "number", required: false }
+      - { label: "Transcript (required)", name: "body", widget: "markdown", i18n: true }
