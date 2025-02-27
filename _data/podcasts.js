@@ -6,7 +6,9 @@ module.exports = {
 		releaseDateText: "Date de publication :",
 		heading: "Épisodes",
 		buttonText: "Écoutez le balado sur votre plateforme préférée",
-		noPodcastText: "Il n'y a pas d'épisodes pour le moment."
+		noPodcastText: "Il n'y a pas d'épisodes pour le moment.",
+		contactUs: "Contactez-nous pour suggérer des sujets ou des idées pour notre prochain podcast à notre email d'AATIA Apprentissage&nbsp;: ",
+		emailSubject: "Courriel à propos podcast : "
 	},
 
 	en: {
@@ -16,7 +18,9 @@ module.exports = {
 		releaseDateText: "Release date:",
 		heading: "Episodes",
 		buttonText: "Listen to the podcast on your favorite platform",
-		noPodcastText: "There are no episodes at the moment."
+		noPodcastText: "There are no episodes at the moment.",
+		contactUs: "Contact us to suggest topics or ideas for our next podcast at our AAACT Learning email: ",
+		emailSubject: "Email about podcast: "
 	},
 	podcastLinks: {
 		spotify: {
