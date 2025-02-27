@@ -16,16 +16,4 @@ layout: layouts/base.njk
 <p>Branchez-vous et élargissez vos horizons pour rendre le milieu de travail accessible à tous!</p>
 
 
-<h2>Balados</h2>
-
-{# List all podcasts here #}
-{%- if collections.podcasts and collections.podcasts.length > 0 -%}
-{%- set podcastslist = collections.podcasts | localeMatch(locale) -%}
-{%- if podcastslist and podcastslist.length > 0 -%}
 {%- include "partials/podcastslist.njk" -%}
-{%- else -%}
-Il n'y a pas de balados pour le moment.
-{%- endif -%}
-{%- else -%}
-Il n'y a pas de balados pour le moment.
-{%- endif -%}

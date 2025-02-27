@@ -15,17 +15,4 @@ layout: layouts/base.njk
 
 <p>Tune in and expand your horizons on making the workplace accessible for all!</p>
 
-
-<h2>Podcasts</h2>
-
-{# List all podcasts here #}
-{%- if collections.podcasts and collections.podcasts.length > 0 -%}
-	{%- set podcastslist = collections.podcasts | localeMatch(locale) -%}
-{%- if podcastslist and podcastslist.length > 0 -%}
-	{%- include "partials/podcastslist.njk" -%}
-{%- else -%}
-	There are no podcasts at the moment.
-{%- endif -%}
-{%- else -%}
-	There are no podcasts at the moment.
-{%- endif -%}
+{%- include "partials/podcastslist.njk" -%}

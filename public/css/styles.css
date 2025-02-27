@@ -436,3 +436,25 @@
 .gcweb-menu.campaign-menu.cm-bg-darker [role=menu] [role=menu] li:last-child [role=menuitem]:hover {
 	background: #000 !important;
 }
+
+/* Podcast styles */
+
+#podcast-list li {
+	background-color: #f0f0f0;
+}
+
+#podcast-list li:hover,
+#podcast-list li:focus {
+	background-color: #000;
+}
+
+#podcast-list li a:hover,
+#podcast-list li a:focus {
+	color: #f0f0f0;
+	background-color: #000;
+}
+
+#podcast-list li a {
+	color: #000;
+}
+

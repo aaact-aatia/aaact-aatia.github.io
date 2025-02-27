@@ -1,4 +1,31 @@
 
+<p><a href="#podcast-list" aria-controls="podcast-list" class="wb-lbx btn btn-call-to-action" role="button"><i class="fas fa-podcast mrgn-rght-md" aria-hidden="true"></i>{{ podcasts[locale].buttonText }}</a></p>
+
+<section id="podcast-list" class="mfp-hide modal-dialog modal-content overlay-def">
+	<header class="modal-header">
+		<h2 class="modal-title">{{ podcasts[locale].buttonText }}</h2>
+	</header>
+	<div class="modal-body">
+		<ul class="colcount-sm-2 list-unstyled lst-spcd">
+			{%- for key, link in podcasts.podcastLinks -%}
+			<li class="brdr-bttm brdr-tp brdr-lft brdr-rght position-relative p-2">
+				<img src="/img/podcasts/icons/{{ link.icon }}" width="50" height="50" />
+				<a class="stretched-link no-undrln p-2" href="{{ link.url[locale] }}">
+					{{ link.name if link.name is string else link.name[locale] }}
+				</a>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</div>
+</section>
+
+
+<h2>{{ podcasts[locale].heading }}</h2>
+{# List all podcasts here #}
+{%- if collections.podcasts and collections.podcasts.length > 0 -%}
+{%- set podcastslist = collections.podcasts | localeMatch(locale) -%}
+{%- if podcastslist and podcastslist.length > 0 -%}
+
 <ul class="list-unstyled">
 		{%- for podcast in podcastslist -%}
 		<li>
@@ -18,3 +45,9 @@
 		</li>
 		{%- endfor -%}
 </ul>
+{%- else -%}
+There are no podcasts at the moment.
+{%- endif -%}
+{%- else -%}
+There are no podcasts at the moment.
+{%- endif -%}
