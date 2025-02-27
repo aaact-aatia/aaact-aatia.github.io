@@ -9,6 +9,8 @@ module.exports = {
 		language: "Langue de la présentation",
 		audience: "Audience",
 		eventLocation: "Lieu de l'événement",
+		contactUs: "Contactez-nous pour plus d'informations sur AATIA Apprentissage à notre adresse courriel&nbsp;: ",
+		emailSubject: "Courriel à propos AATIA Apprentissage : "
 	},
 	en: {
 		location: "Location:",
@@ -20,5 +22,7 @@ module.exports = {
 		language: "Language of presentation",
 		audience: "Audience",
 		eventLocation: "Location",
+		contactUs: "Contact us for more information about AAACT Learning at our email: ",
+		emailSubject: "Email about AAACT Learning: "
 	},
 };

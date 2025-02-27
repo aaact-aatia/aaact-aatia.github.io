@@ -15,3 +15,10 @@
 		</li>
 		{%- endfor -%}
 </ul>
+
+<p class="mt-4 well"><i class="fas fa-envelope fa-lg mr-2" aria-hidden="true"></i>
+	{{ events[locale].contactUs | safe }}
+	<a href="mailto:{{ footer.contextualFooter[locale].learning.email }}?subject={{ events[locale].emailSubject }}">
+		{{ footer.contextualFooter[locale].learning.email }}
+	</a>
+</p>

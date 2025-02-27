@@ -1,7 +1,7 @@
 module.exports = {
 	contextualFooter: {
 		fr: {
-			heading: "Contacts e-mail pour l'Accessibilité, adaptation et technologie informatique adaptée (AATIA)",
+			heading: "Adresse courriell pour l'Accessibilité, adaptation et technologie informatique adaptée (AATIA)",
 			aaact: {
 				text: "AATIA boîte aux lettres générale",
 				email: "aaact-aatia@ssc-spc.gc.ca"
@@ -12,7 +12,7 @@ module.exports = {
 			}
 		},
 		en: {
-			heading: "Email contacts for Accessibility, Accommodation and Adaptive Computer Technology (AAACT)",
+			heading: "Email addesses for Accessibility, Accommodation and Adaptive Computer Technology (AAACT)",
 			aaact: {
 				text: "AAACT general mailbox",
 				email: "aaact-aatia@ssc-spc.gc.ca"

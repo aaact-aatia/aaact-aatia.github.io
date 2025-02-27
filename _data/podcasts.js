@@ -7,7 +7,7 @@ module.exports = {
 		heading: "Épisodes",
 		buttonText: "Écoutez le balado sur votre plateforme préférée",
 		noPodcastText: "Il n'y a pas d'épisodes pour le moment.",
-		contactUs: "Contactez-nous pour plus d'informations sur Horizons accessibles à notre courriel d'AATIA Apprentissage&nbsp;: ",
+		contactUs: "Contactez-nous pour plus d'informations sur Horizons accessibles à notre address courriel d'AATIA Apprentissage&nbsp;: ",
 		emailSubject: "Courriel à propos podcast : "
 	},
 
