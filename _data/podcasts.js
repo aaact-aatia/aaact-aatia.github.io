@@ -29,7 +29,7 @@ module.exports = {
 				fr: "https://open.spotify.com/show/4Qnn5WLwdKwQIo3eblpgkD"
 			},
 			name: "Spotify",
-			icon: "icon50_spotify.png"
+			icon: "spotify.png"
 		},
 		apple: {
 			url: {
@@ -37,7 +37,7 @@ module.exports = {
 				fr: "https://podcasts.apple.com/us/podcast/horizons-accessibles/id1797976783"
 			},
 			name: "Apple Podcasts",
-			icon: "icon50_apple.png"
+			icon: "apple.png"
 		},
 		amazon: {
 			url: {
@@ -45,7 +45,7 @@ module.exports = {
 				fr: "https://music.amazon.com/podcasts/92e94446-5397-4efc-8363-46b8be3b18ea"
 			},
 			name: "Amazon Music",
-			icon: "icon50_amazon.png"
+			icon: "amazon.png"
 		},
 		deezer: {
 			url: {
@@ -53,7 +53,7 @@ module.exports = {
 				fr: "https://www.deezer.com/en/show/1001664591"
 			},
 			name: "Deezer",
-			icon: "icon50_deezer.png"
+			icon: "deezer.png"
 		},
 		rss: {
 			url: {
@@ -64,7 +64,7 @@ module.exports = {
 				en: "RSS",
 				fr: "Flux RSS"
 			},
-			icon: "icon32_rss.png"
+			icon: "rss.png"
 		}
 	}
 };
