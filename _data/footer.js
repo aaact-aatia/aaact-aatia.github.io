@@ -1,4 +1,28 @@
 module.exports = {
+	contextualFooter: {
+		fr: {
+			heading: "Contacts e-mail pour l'Accessibilité, adaptation et technologie informatique adaptée (AATIA)",
+			aaact: {
+				text: "AATIA boîte aux lettres générale",
+				email: "aaact-aatia@ssc-spc.gc.ca"
+			},
+			learning: {
+				text: "AATIA Apprentissage",
+				email: "aaactlearning-aatiaapprentissage@ssc-spc.gc.ca"
+			}
+		},
+		en: {
+			heading: "Email contacts for Accessibility, Accommodation and Adaptive Computer Technology (AAACT)",
+			aaact: {
+				text: "AAACT general mailbox",
+				email: "aaact-aatia@ssc-spc.gc.ca"
+			},
+			learning: {
+				text: "AAACT Learning",
+				email: "aaactlearning-aatiaapprentissage@ssc-spc.gc.ca"
+			}
+		}
+	},
 	fr: {
 		allContacts: "Toutes les coordonnées",
 		allContactsLink: "https://www.canada.ca/fr/contact.html",

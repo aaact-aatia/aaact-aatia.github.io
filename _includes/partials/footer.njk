@@ -1,6 +1,20 @@
 
 <footer id="wb-info">
 	<h2 class="wb-inv">{{ footer[locale].aboutThisSite }}</h2>
+		<div class="gc-contextual">
+			<div class="container">
+				<nav>
+					<h3>{{ footer.contextualFooter[locale].heading }}</h3>
+					<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3">
+						{%- for key, item in footer.contextualFooter[locale] -%}
+							{%- if key != "heading" -%} {# Ignore the heading key #}
+								<li><a href="mailto:{{ item.email }}"><i class="fas fa-envelope mr-2" aria-hidden="true"></i>{{ item.text }}</a></li>
+							{%- endif -%}
+						{%- endfor -%}
+					</ul>
+				</nav>
+			</div>
+		</div>
 	<div class="gc-main-footer">
 		<div class="container">
 			<nav>
