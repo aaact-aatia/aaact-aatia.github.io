@@ -5,7 +5,8 @@ module.exports = {
 		transcriptionText: "Transcription :",
 		releaseDateText: "Date de publication :",
 		heading: "Épisodes",
-		buttonText: "Écoutez le balado sur votre plateforme préférée"
+		buttonText: "Écoutez le balado sur votre plateforme préférée",
+		noPodcastText: "Il n'y a pas d'épisodes pour le moment."
 	},
 
 	en: {
@@ -14,7 +15,8 @@ module.exports = {
 		transcriptionText: "Transcription:",
 		releaseDateText: "Release date:",
 		heading: "Episodes",
-		buttonText: "Listen to the podcast on your favorite platform"
+		buttonText: "Listen to the podcast on your favorite platform",
+		noPodcastText: "There are no episodes at the moment."
 	},
 	podcastLinks: {
 		spotify: {
@@ -51,8 +53,8 @@ module.exports = {
 		},
 		rss: {
 			url: {
-				en: "#",
-				fr: "#"
+				en: "https://feeds.buzzsprout.com/2451182.rss",
+				fr: "https://feeds.buzzsprout.com/2451726.rss"
 			},
 			name: {
 				en: "RSS",
