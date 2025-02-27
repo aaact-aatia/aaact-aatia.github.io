@@ -51,10 +51,3 @@
 {%- else -%}
 <p>{{ podcasts[locale].noPodcastText }}</p>
 {%- endif -%}
-
-<p class="mt-4 well"><i class="fas fa-envelope fa-lg mr-2" aria-hidden="true"></i>
-	{{ podcasts[locale].contactUs | safe }}
-	<a href="mailto:{{ footer.contextualFooter[locale].learning.email }}?subject={{ podcasts[locale].emailSubject }}">
-		{{ footer.contextualFooter[locale].learning.email }}
-	</a>
-</p>

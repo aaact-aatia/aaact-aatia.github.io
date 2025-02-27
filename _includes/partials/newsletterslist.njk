@@ -9,10 +9,3 @@
 		</li>
 		{%- endfor -%}
 </ul>
-
-<p class="mt-4 well"><i class="fas fa-envelope fa-lg mr-2" aria-hidden="true"></i>
-	{{ newsletters[locale].contactUs | safe }}
-	<a href="mailto:{{ footer.contextualFooter[locale].learning.email }}?subject={{ newsletters[locale].emailSubject }}">
-		{{ footer.contextualFooter[locale].aaact.email }}
-	</a>
-</p>

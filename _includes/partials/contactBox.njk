@@ -1,0 +1,20 @@
+
+{%- set dataSource = "" -%}
+
+{%- if tags and "podcasts" in tags -%}
+{%- set dataSource = podcasts[locale] -%}
+{%- elif tags and "newsletters" in tags -%}
+{%- set dataSource = newsletters[locale] -%}
+{%- elif tags and "events" in tags -%}
+{%- set dataSource = events[locale] -%}
+{%- endif -%}
+
+{%- if dataSource -%}
+<p class="mt-4 well">
+	<i class="fas fa-envelope fa-lg mr-2" aria-hidden="true"></i>
+	{{ dataSource.contactUs | safe }}
+	<a href="mailto:{{ footer.contextualFooter[locale].learning.email }}?subject={{ dataSource.emailSubject }}">
+		{{ footer.contextualFooter[locale].learning.email }}
+	</a>
+</p>
+{%- endif -%}

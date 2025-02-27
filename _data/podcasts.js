@@ -17,7 +17,7 @@ module.exports = {
 		transcriptionText: "Transcription:",
 		releaseDateText: "Release date:",
 		heading: "Episodes",
-		buttonText: "Listen to the podcast on your favorite platform",
+		buttonText: "Listen to the podcast on your favourite platform",
 		noPodcastText: "There are no episodes at the moment.",
 		contactUs: "Contact us for more information about Accessible Horizons at our AAACT Learning email: ",
 		emailSubject: "Email about podcast: "
