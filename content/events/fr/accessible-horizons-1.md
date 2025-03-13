@@ -1,0 +1,49 @@
+---
+description: Joignez-vous à l’équipe de l’Accessibilité, adaptation et
+  technologie informatique adaptée (AATIA) pour un événement virtuel engageant
+  et inclusif !
+eventDate: 2025-03-28
+---
+Voici l’épisode 3 des événements en direct de <abbr title="Accessibilité, adaptation, et technologie informatique adaptée">l’AATIA - Horizons accessibles. Cet épisode suivra notre style distinctif qui est composé de 3 parties.
+
+Déails del'évènement
+
+<dl>
+	<dt>Date:</dt>
+	<dd class="mrgn-lft-md">March 28, 2025</dd>
+	<dt>Time:</dt>
+	<dd class="mrgn-lft-md">
+	<dl class="mrgn-lft-lg">
+		<dt>English session:</dt>
+		<dd class="mrgn-lft-md">11:30 AM &mdash; 12:00 PM (<abbr title="Eastern Standard Time">EST</abbr>)</dd>
+		<dt>Registration:</dt>
+		<dd class="mrgn-lft-md"><a href="https://events.teams.microsoft.com/event/92c8cc7f-72d4-4541-a2ba-5dbdf8112acb@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e">Accessible Horizons &mdash; Episode 3</a></dd>
+		<dt>French session:</dt>
+		<dd class="mrgn-lft-md">10:30 AM &mdash; 11:00 PM (<abbr title="Eastern Standard ime">EST</abbr>)</dd>
+		<dt>Registration:</dt>
+		<dd class="mrgn-lft-md"><a href="https://events.teams.microsoft.com/event/473cd859-177c-4f90-abb9-ce8b435439b4@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e" lang="fr">Horizons accessibles
+&mdash; Épisode 3</a></dd>
+	</dl>
+	</dd>
+	<dt>Platform:</dt>
+	<dd class="mrgn-lft-md">Webinar via Microsoft Teams</dd>
+	<dt>Sign language interpretation:</dt>
+	<dd class="mrgn-lft-md">Available for both sessions</dd>
+</dl>
+
+## Agenda
+
+* Showcasing 219 Laurier
+* <abbr title="Accessibility, Accommodation and Adaptive Computer Technology">AAACT</abbr> Lending Library
+* Nadine and Luna: A conversation between two managers about more complex accommodation situations 
+
+
+
+
+## How to join
+
+Visit [Webinar Episode 3 - Accessible Horizons](<>) to register. Upon registration, you'll receive a calendar invite with the link and event details.
+
+This event is open to Government of Canada employees, please share this broadly. Let’s come together to make a lasting impact on accessibility and inclusion in the workplace.
+
+We look forward to seeing you at the event!
