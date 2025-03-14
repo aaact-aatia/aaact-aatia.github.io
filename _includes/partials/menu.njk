@@ -4,8 +4,8 @@
 {%- if collections.newsletters and collections.newsletters.length > 0 -%}
 {%- set newsletterslist = collections.newsletters | localeMatch(locale) -%}
 {% endif %}
-{%- if collections.events and collections.events.length > 0 -%}
-{%- set eventslist = collections.events | localeMatch(locale) -%}
+{%- if collections.learning and collections.learning.length > 0 -%}
+{%- set learninglist = collections.learning | localeMatch(locale) -%}
 {% endif %}
 <div class="menu-banner">
 	<div class="container">
@@ -23,8 +23,8 @@
 			</button>
 			<ul role="menu" aria-orientation="vertical">
 				<li role="none"><a role="menuitem" tabindex="0" href="{{ menu[locale].home[0].link }}">{{ menu[locale].home[0].title }}</a></li>
-				{%- if eventslist and eventslist.length > 0 -%}
-				<li role="none"><a role="menuitem" tabindex="-1" href="{{ menu[locale].events[0].link }}">{{ menu[locale].events[0].title }}</a></li>
+				{%- if learninglist and learninglist.length > 0 -%}
+				<li role="none"><a role="menuitem" tabindex="-1" href="{{ menu[locale].learning[0].link }}">{{ menu[locale].learning[0].title }}</a></li>
 				{% endif %}
 				{%- if newsletterslist and newsletterslist.length > 0 -%}
 				<li role="none"><a role="menuitem" tabindex="-1" href="{{ menu[locale].newsletters[0].link }}">{{ menu[locale].newsletters[0].title }}</a></li>

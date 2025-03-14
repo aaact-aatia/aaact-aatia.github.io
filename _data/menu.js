@@ -9,9 +9,9 @@ module.exports = {
 			title: "Balados",
 			link: "/balados/"
 		}],
-		events: [{
-			title: "Evenements",
-			link: "/evenements/"
+		learning: [{
+			title: "Formation",
+			link: "/formation/"
 		}],
 		newsletters: [{
 			title: "Infolettres",
@@ -29,9 +29,9 @@ module.exports = {
 			title: "Podcasts",
 			link: "/podcasts/"
 		}],
-		events: [{
-			title: "Events",
-			link: "/events/"
+		learning: [{
+			title: "Learning",
+			link: "/learning/"
 		}],
 		newsletters: [{
 			title: "Newsletters",

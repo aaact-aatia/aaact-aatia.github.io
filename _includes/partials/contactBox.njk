@@ -5,8 +5,8 @@
 {%- set dataSource = podcasts[locale] -%}
 {%- elif tags and "newsletters" in tags -%}
 {%- set dataSource = newsletters[locale] -%}
-{%- elif tags and "events" in tags -%}
-{%- set dataSource = events[locale] -%}
+{%- elif tags and "learning" in tags -%}
+{%- set dataSource = learning[locale] -%}
 {%- endif -%}
 
 {%- if dataSource -%}

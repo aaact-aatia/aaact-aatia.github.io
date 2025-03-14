@@ -38,9 +38,9 @@ i18n:
 
 collections:
 
-  - name: "events"
-    label: "Events"
-    folder: "content/events"
+  - name: "learning"
+    label: "Learning"
+    folder: "content/learning"
     create: true
     slug: "{{slug}}"
     i18n: true

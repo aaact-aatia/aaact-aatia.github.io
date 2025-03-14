@@ -39,6 +39,19 @@
   status = 301
   force = true
 
+# Redirect old English event pages to new learning section
+[[redirects]]
+  from = "/events/*"
+  to = "/learning/:splat"
+  status = 301
+  force = true
+
+# Redirect old French event pages to new formation section
+[[redirects]]
+  from = "/evenements/*"
+  to = "/formation/:splat"
+  status = 301
+  force = true
 
 	# Opt-in to the Netlify Lighthouse plugin (choose one):
 

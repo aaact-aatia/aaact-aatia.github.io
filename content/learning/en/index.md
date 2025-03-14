@@ -1,8 +1,8 @@
 ---
 title: Government of Canada Accessibility Training and Events
 description: The Government of Canada’s vision is to make Canada’s public service the most accessible and inclusive in the world.
-permalink: /events/
-otherLanguagePermalink: /evenements/
+permalink: /learning/
+otherLanguagePermalink: /formation/
 eleventyExcludeFromCollections: true
 internalLinks: true
 ---
@@ -12,16 +12,16 @@ To view previous presentations check out our [past presentations page <span clas
 
 To help promote upcoming accessibility activities organized by various Government of Canada departments that are open to public service employees we have also posted their event details below.
 
-## Events
+## Learning
 
-{# List all events here #}
-{%- if collections.events and collections.events.length > 0 -%}
-  {%- set eventslist = collections.events | localeMatch(locale) -%}
-  {%- if eventslist and eventslist.length > 0 -%}
-    {%- include "partials/eventslist.njk" -%}
+{# List all learning events here #}
+{%- if collections.learning and collections.learning.length > 0 -%}
+  {%- set learninglist = collections.learning | localeMatch(locale) -%}
+  {%- if learninglist and learninglist.length > 0 -%}
+    {%- include "partials/learninglist.njk" -%}
   {%- else -%}
-    There are no events scheduled at the moment.
+    There are no learning events scheduled at the moment.
   {%- endif -%}
 {%- else -%}
-  There are no events scheduled at the moment.
+  There are no learning events scheduled at the moment.
 {%- endif -%}

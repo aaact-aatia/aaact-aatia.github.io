@@ -1,0 +1,4 @@
+{
+	"locale": "fr",
+	"permalink": "/formation/{{ title | slugify }}/"
+}

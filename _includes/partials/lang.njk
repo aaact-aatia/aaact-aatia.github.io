@@ -1,8 +1,8 @@
 {# Language toggle #}
 {%- set toggleTag = "" -%}
 
-{%- if tags and "events" in tags -%}
-{%- set toggleTag = "evenements" if locale == "en" else "events" -%}
+{%- if tags and "learning" in tags -%}
+{%- set toggleTag = "formation" if locale == "en" else "learning" -%}
 {%- elif tags and "newsletters" in tags -%}
 {%- set toggleTag = "infolettres" if locale == "en" else "newsletters" -%}
 {%- elif tags and "podcasts" in tags -%}

@@ -1,8 +1,8 @@
 ---
 title: Formation et événements du gouvernement du Canada sur l'accessibilité
 description: La vision du gouvernement du Canada est de faire de la fonction publique du Canada la plus accessible et inclusive au monde.
-permalink: /evenements/
-otherLanguagePermalink: /events/
+permalink: /formation/
+otherLanguagePermalink: /learning/
 eleventyExcludeFromCollections: true
 internalLinks: true
 ---
@@ -15,10 +15,10 @@ Pour aider à promouvoir les activités d'accessibilité à venir organisées pa
 
 {# Liste de tous les événements ici #}
 
-{%- if collections.events and collections.events.length > 0 -%}
-  {%- set eventslist = collections.events | localeMatch(locale) -%}
-  {%- if eventslist and eventslist.length > 0 -%}
-    {%- include "partials/eventslist.njk" -%}
+{%- if collections.learning and collections.learning.length > 0 -%}
+  {%- set learninglist = collections.learning | localeMatch(locale) -%}
+  {%- if learninglist and learninglist.length > 0 -%}
+    {%- include "partials/learninglist.njk" -%}
   {%- else -%}
     Aucun événement n'est prévu pour le moment.
   {%- endif -%}

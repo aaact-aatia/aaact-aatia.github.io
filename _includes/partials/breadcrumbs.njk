@@ -18,9 +18,9 @@ So far, there is one level for the homepage and a second level for tagged pages.
 {%- if tags and "newsletters" in tags -%}
 {%- set secondLevel = "Infolettres" if locale == "fr" else "Newsletters" -%}
 {%- set secondLevelUrl = "/infolettres/" if locale == "fr" else "/newsletters/" -%}
-{%- elif tags and "events" in tags -%}
-{%- set secondLevel = "Événements" if locale == "fr" else "Events" -%}
-{%- set secondLevelUrl = "/evenements/" if locale == "fr" else "/events/" -%}
+{%- elif tags and "learning" in tags -%}
+{%- set secondLevel = "Formation" if locale == "fr" else "Learning" -%}
+{%- set secondLevelUrl = "/formation/" if locale == "fr" else "/learning/" -%}
 {%- endif -%}
 {%- endif -%}
 
