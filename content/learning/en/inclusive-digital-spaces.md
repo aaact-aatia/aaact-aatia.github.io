@@ -20,13 +20,13 @@ eventDetails:
     text: Inclusive Digital Spaces - Best Practices for Accessibility
     link: https://events.teams.microsoft.com/event/12345678-abcd-efgh-ijkl-9876543210mn@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
   fr:
-    signLanguage: true
-    date: 2025-03-26
-    startTime: 10:30AM
-    endTime: 12:00PM
-    text: Espaces numériques inclusifs - Meilleures pratiques pour l'accessibilité
-    link: https://events.teams.microsoft.com/event/abcdefgh-1234-5678-ijkl-0987654321op@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
-  platform: Webinar via Microsoft Teams
+    signLanguage: false
+    date: ""
+    startTime: ""
+    endTime: ""
+    text: ""
+    link: ""
+  platform: ""
 ---
 title: Inclusive Digital Spaces
 otherLanguageTitle: Espaces numériques inclusifs

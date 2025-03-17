@@ -20,10 +20,10 @@ eventDetails:
     startTime: 10 h
     endTime: 11 h 30
   fr:
-    signLanguage: true
-    date: 2025-03-26
-    text: Espaces numériques inclusifs - Meilleures pratiques pour l'accessibilité
-    link: https://events.teams.microsoft.com/event/abcdefgh-1234-5678-ijkl-0987654321op@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
+    signLanguage: false
+    date: ""
+    text: ""
+    link: ""
     startTime: 10 h 30
     endTime: 12 h
   eventDate: null
