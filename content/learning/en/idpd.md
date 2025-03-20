@@ -8,6 +8,8 @@ description: Join the Accessibility, Accommodation and Adaptive Computer
   event!
 indrodution: During this unique International Day of Persons with Disabilities (<abbr>IDPD</abbr>) 2024 session, we will give you a virtual glimpse of our new accessible space in the National Capital Region. We will showcase some of the less known tools that employees use to address workplace barriers. We will hear valuable insights that will help you create a more inclusive and accessible work environment.
 eventDetails:
+  signLanguage: true
+  platform: Webinar via Microsoft Teams
   en:
     date: 2024-12-04
     startTime: 1:00 PM
@@ -21,9 +23,6 @@ eventDetails:
     endTime: 2:30 PM
     text: Webinaire Journée internationale des personnes en situation de handicap 2024 l’AATIA
     link: https://events.teams.microsoft.com/event/246697b9-9c03-457e-a155-12c6e37328f7@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
-    signLanguage: true
-  platform: Webinar via Microsoft Teams
-
 ---
 
 ## Agenda

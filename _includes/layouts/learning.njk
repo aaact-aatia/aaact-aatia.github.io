@@ -1,62 +1,91 @@
 {% set otherLocale = "fr" if locale == "en" else "en" %}
 {% set localeText = "English session" if locale == "en" else "Séance en français" %}
 {% set otherLocaleText = "French session" if locale == "en" else "Séance en anglais" %}
-{% set timeZone = "<abbr title=\"Eastern Standard Time\">EST</abbr>" if locale == "en" else "<abbr title=\"heure normale de l'Est\">HNE</abbr>" %}
+{% set timeZoneText = "Eastern Standard Time" if locale == "en" else "heure normale de l'Est" %}
+{% set timeZoneAcronym = "EST" if locale == "en" else "HNE" %}
 
 {% extends "layouts/base.njk" %}
 {% block content %}
 
 {%- if not eleventyExcludeFromCollections -%}
+	{%- if eventDetails -%}
 
-{%- if eventDetails -%}
+		<h2>{{ learning[locale].eventDetails.headingText }}</h2>
 
-<h2>{{ learning[locale].eventDetails.headingText }}</h2>
-{%- endif -%}
+		{%- if introduction -%}
+			{{ introduction | markdownify | safe }}
+		{%- endif -%}
 
-{%- if introduction -%}
-{{ introduction | markdownify | safe }}
-{%- endif -%}
+		{% if eventDetails[otherLocale] %}
+			<dl class="colcount-md-2">
+				<dt>{{ localeText }}</dt>
+				<dd>
+		{%- endif -%}
 
-{%- if eventDetails -%}
-<dl{% if eventDetails[otherLocale].date %} class="colcount-md-2"{%- endif -%}>
-	<dt>{{ localeText }}</dt>
-	<dd>
-		<dl class="ml-4 mt-3">
-			<dt>Date:</dt>
-			<dd class="ml-4">{{ eventDetails[locale].date | fullTextDate(locale) }}</dd>
-			<dt>{{ learning[locale].eventDetails.timeText }}</dt>
-			<dd class="ml-4">{{ eventDetails[locale].startTime }} {% if locale == "en" %}&mdash;{% else %}à{% endif %} {{ eventDetails[locale].endTime }} ({{ timeZone | safe }})</dd>
-			<dt>{{ learning[locale].eventDetails.registrationText }}</dt>
-			<dd class="ml-4"><a href="{{ eventDetails[locale].link }}">{{ eventDetails[locale].text }}</a></dd>
-			{%- if learning[locale].eventDetails.signLangText -%}
-				<dt>{{ learning[locale].eventDetails.signLangText }}</dt>
-				<dd class="ml-4">{{ learning[locale].eventDetails.signLangAvailable }}</dd>
-			{%- endif -%}
-			{%- if platform -%}
-			<dt>{{ learning[locale].eventDetails.platformText }}</dt>
-			<dd class="ml-4">{{ platform }}</dd>
-			{%- endif -%}
-		</dl>
-	</dd>
-	{%- if eventDetails[otherLocale].date -%}
-	<dt>{{ otherLocaleText }}</dt>
-	<dd>
-		<dl class="ml-4 mt-3">
-			<dt>Date:</dt>
-			<dd class="ml-4">{{ eventDetails[otherLocale].date | fullTextDate(locale) }}</dd>
-			<dt>{{ learning[locale].eventDetails.timeText }}</dt>
-			<dd class="ml-4">{{ eventDetails[otherLocale].startTime }} {% if locale == "en" %}&mdash;{% else %}à{% endif %} {{ eventDetails[otherLocale].endTime }} ({{ timeZone | safe }})</dd>
-			<dt>{{ learning[locale].eventDetails.registrationText }}</dt>
-			<dd class="ml-4"><a lang="{{ otherLocale }}" href="{{ eventDetails[otherLocale].link }}">{{ eventDetails[otherLocale].text }}</a></dd>
-			<dt>{{ learning[locale].eventDetails.signLangText }}</dt>
-			<dd class="ml-4">{{ learning[locale].eventDetails.signLangAvailable }}</dd>
-			<dt>{{ learning[locale].eventDetails.platformText }}</dt>
-			<dd class="ml-4">{{ platform }}</dd>
-		</dl>
-	</dd>
+				<dl{% if eventDetails[otherLocale] %} class="ml-4 mt-3"{%- endif -%}>
+					{%- if eventDetails.whoIsThisFor -%}
+						<dt>{{ learning[locale].eventDetails.whoIsThisForText }}</dt>
+						<dd class="ml-4">{{ eventDetails.whoIsThisFor }}</dd>
+					{%- endif -%}
+					{%- if eventDetails.eventDate or eventDetails[locale].date -%}
+						<dt>Date:</dt>
+						<dd class="ml-4">{{ eventDetails[locale].date | fullTextDate(locale) }}</dd>
+						<dt>{{ learning[locale].eventDetails.timeText }}</dt>
+						<dd class="ml-4">{{ eventDetails[locale].startTime }} {% if locale == "en" %}&mdash;{% else %}à{% endif %} {{ eventDetails[locale].endTime }} (<abbr title="{{ timeZoneText }}">{{ timeZoneAcronym }}</abbr>)</dd>
+						{%- if eventDetails[locale].text -%}
+							<dt>{{ learning[locale].eventDetails.registrationText }}</dt>
+							<dd class="ml-4"><a href="{{ eventDetails[locale].link }}">{{ eventDetails[locale].text }}</a></dd>
+						{%- endif -%}
+						{%- if eventDetails.signLanguage -%}
+							<dt>{{ learning[locale].eventDetails.signLangText }}</dt>
+							<dd class="ml-4">{{ learning[locale].eventDetails.signLangAvailable }}</dd>
+						{%- endif -%}
+					{%- endif -%}
+					{%- if eventDetails.platform -%}
+						<dt>{{ learning[locale].eventDetails.platformText }}</dt>
+						<dd class="ml-4">{{ eventDetails.platform }}</dd>
+					{%- endif -%}
+				</dl>
+
+		{%- if eventDetails[otherLocale] -%}
+
+				</dd>
+				<dt>{{ otherLocaleText }}</dt>
+				<dd>
+
+				<dl class="ml-4 mt-3">
+					{%- if eventDetails.whoIsThisFor -%}
+						<dt>{{ learning[locale].eventDetails.whoIsThisForText }}</dt>
+						<dd class="ml-4">{{ eventDetails.whoIsThisFor }}</dd>
+					{%- endif -%}
+					{%- if eventDetails.eventDate or eventDetails[locale].date -%}
+						<dt>Date:</dt>
+						<dd class="ml-4">{{ eventDetails[otherLocale].date | fullTextDate(locale) }}</dd>
+						<dt>{{ learning[locale].eventDetails.timeText }}</dt>
+						<dd class="ml-4">{{ eventDetails[otherLocale].startTime }} {% if locale == "en" %}&mdash;{% else %}à{% endif %} {{ eventDetails[otherLocale].endTime }} (<abbr title="{{ timeZoneText }}">{{ timeZoneAcronym }}</abbr>)</dd>
+						{%- if eventDetails[otherLocale].text -%}
+						<dt>{{ learning[locale].eventDetails.registrationText }}</dt>
+						<dd class="ml-4"><a href="{{ eventDetails[otherLocale].link }}">{{ eventDetails[otherLocale].text }}</a></dd>
+					{%- endif -%}
+					{%- if eventDetails.signLanguage -%}
+						<dt>{{ learning[locale].eventDetails.signLangText }}</dt>
+						<dd class="ml-4">{{ learning[locale].eventDetails.signLangAvailable }}</dd>
+					{%- endif -%}
+					{%- endif -%}
+					{%- if eventDetails.platform -%}
+					<dt>{{ learning[locale].eventDetails.platformText }}</dt>
+					<dd class="ml-4">{{ eventDetails.platform }}</dd>
+					{%- endif -%}
+					</dl>
+
+				</dd>
+			</dl>
+
+		{%- endif -%}
+
+
 	{%- endif -%}
-</dl>
-{%- endif -%}
+
 {%- endif -%}
 
 {{ content | safe }}
