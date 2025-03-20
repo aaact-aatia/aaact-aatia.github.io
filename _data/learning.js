@@ -23,6 +23,7 @@ module.exports = {
 			signLangText: "Interprète en langue des signes :",
 			signLangAvailable: "Disponible",
 			platformText: "Format :",
+			whoIsThisForText: "Pour qui est-ce ?",
 		},
 	},
 	en: {
@@ -49,6 +50,7 @@ module.exports = {
 			signLangText: "Sign language interpreter:",
 			signLangAvailable: "Available",
 			platformText: "Delivery:",
+			whoIsThisForText: "Who is this for?",
 		},
 	},
 };

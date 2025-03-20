@@ -77,6 +77,11 @@ collections:
             i18n: "duplicate"
             required: false
 
+          - { label: "Duration in minutes", name: "duration", widget: "number", valueType: "int", required: false, i18n: duplicate }
+          - { label: "Platform", name: "platform", widget: "string", required: false, i18n: true }
+          - { label: "Who is this for?", name: "whoIsThisFor", widget: "string", required: false, i18n: true }
+          - { label: "Sign Language Interpretation", name: "signLanguage", widget: "boolean", required: false, i18n: true }
+
           - label: "English"
             name: "en"
             widget: "object"
@@ -87,9 +92,8 @@ collections:
               - { label: "Date (YYYY-MM-DD)", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", required: false, i18n: "duplicate" }
               - { label: "Start Time", name: "startTime", widget: "string", required: false, i18n: true }
               - { label: "End Time", name: "endTime", widget: "string", required: false, i18n: true }
-              - { label: "Text", name: "text", widget: "string", required: false, i18n: "duplicate" }
-              - { label: "Registration Link", name: "link", widget: "string", required: false, i18n: "duplicate" }
-              - { label: "Sign Language Interpretation", name: "signLanguage", widget: "boolean", required: false, i18n: true }
+              - { label: "Registraction link text", name: "text", widget: "string", required: false, i18n: "duplicate" }
+              - { label: "Registration link URL", name: "link", widget: "string", required: false, i18n: "duplicate" }
 
           - label: "French"
             name: "fr"
@@ -101,13 +105,9 @@ collections:
               - { label: "Date (YYYY-MM-DD)", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", required: false, i18n: "duplicate" }
               - { label: "Start Time", name: "startTime", widget: "string", required: false, i18n: true }
               - { label: "End Time", name: "endTime", widget: "string", required: false, i18n: true }
-              - { label: "Text", name: "text", widget: "string", required: false, i18n: "duplicate" }
-              - { label: "Registration Link", name: "link", widget: "string", required: false, i18n: "duplicate" }
-              - { label: "Sign Language Interpretation", name: "signLanguage", widget: "boolean", required: false, i18n: true }
+              - { label: "Registraction link text", name: "text", widget: "string", required: false, i18n: "duplicate" }
+              - { label: "Registration link URL", name: "link", widget: "string", required: false, i18n: "duplicate" }
 
-      - { label: "Duration in minutes", name: "duration", widget: "number", valueType: "int", required: false, i18n: duplicate }
-      - { label: "Platform", name: "platform", widget: "string", required: false, i18n: true }
-      - { label: "Who is this for?", name: "whoIsThisFor", widget: "string", required: false, i18n: true }
       - { label: "Details (required)", name: "body", widget: "markdown", i18n: true }
 
   - name: "newsletters"

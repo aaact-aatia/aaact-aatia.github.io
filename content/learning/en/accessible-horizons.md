@@ -8,6 +8,7 @@ description: Join the Accessibility, Accommodation and Adaptive Computer
   event!
 introduction: This is Episode 2 of <abbr title="Accessibility, Accommodation and Adaptive Computer Technology">AAACT's</abbr> live events - Accessible Horizons. This episode will follow our signature style which is comprised of 3 parts.
 eventDetails:
+  platform: Webinar via Microsoft Teams
   en:
     date: 2025-02-28
     startTime: 1:00PM
@@ -22,7 +23,6 @@ eventDetails:
     signLanguage: true
     text: Horizons accessibles — Épisode 2
     link: https://events.teams.microsoft.com/event/473cd859-177c-4f90-abb9-ce8b435439b4@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
-platform: Webinar via Microsoft Teams
 ---
 
 ## Agenda

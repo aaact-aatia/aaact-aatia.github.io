@@ -10,22 +10,21 @@ introduction: Voici l’épisode 3 des événements en direct de l’<abbr
   adaptée">AATIA</abbr> - Horizons accessibles. Cet épisode suivra notre style
   distinctif qui est composé de 3 parties.
 eventDetails:
+  platform: Webinaire par le biais de Microsoft Teams
+  eventDate: 2025-03-28
+  signLanguage: true
   en:
-    signLanguage: false
     date: 2025-03-28
     text: Accessible Horizons - Support, solutions and spaces
     link: https://events.teams.microsoft.com/event/7c0d3315-0292-43ee-8d2a-af6b3aaf3e42@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
     startTime: 11 h 30
     endTime: 12 h
   fr:
-    signLanguage: false
     date: 2025-03-28
     text: Horizons accessibles - Soutien, solutions et espaces
     link: https://events.teams.microsoft.com/event/9164a134-ba3a-4054-b917-886b7b558a4c@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
     startTime: 10 h 30
     endTime: 11 h
-  eventDate: 2025-03-28
-platform: Webinaire par le biais de Microsoft Teams
 ---
 ## Ordre du jour
 
