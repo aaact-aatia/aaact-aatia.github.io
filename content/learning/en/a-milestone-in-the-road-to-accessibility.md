@@ -9,6 +9,8 @@ introduction: This is Episode 3 of <abbr title="Accessibility, Accommodation and
   Horizons. This episode will follow our signature style which is comprised of 3
   parts.
 eventDetails:
+  eventDate: 2025-03-28
+  platform: Webinar via Microsoft Teams
   en:
     signLanguage: true
     date: 2025-03-28
@@ -23,8 +25,6 @@ eventDetails:
     link: https://events.teams.microsoft.com/event/9164a134-ba3a-4054-b917-886b7b558a4c@d05bc194-94bf-4ad6-ae2e-1db0f2e38f5e
     text: Horizons accessibles - Soutien, solutions et espaces
     date: 2025-03-28
-  eventDate: 2025-03-28
-platform: Webinar via Microsoft Teams
 ---
 ## Agenda
 

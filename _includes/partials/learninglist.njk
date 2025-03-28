@@ -20,21 +20,21 @@
 					</a>
 				</h3>
 
-				{%- if event.data.eventDetails -%}
-				<dl>
-					<dt>{{ learning[locale].eventDate }}</dt>
-					<dd>
-						{%- if event.data.eventDetails.eventDate -%}
-						{{ event.data.eventDetails.eventDate | htmlDateString }}
-						{%- else -%}
-						{{ event.data.eventDetails[locale].date | htmlDateString }}
-						{%- endif -%}
-					</dd>
-				</dl>
+				{%- if event.data.eventDetails.eventDate or event.data.eventDetails[locale].date  -%}
+					{% set thisDate = event.data.eventDetails[locale].date %}
+					{%- if event.data.eventDetails.eventDate -%}
+						{% set thisDate = event.data.eventDetails.eventDate %}
+					{%- endif -%}
+					<dl>
+						<dt>{{ learning[locale].eventDate }}</dt>
+						<dd>
+							{{ thisDate | htmlDateString }}
+						</dd>
+					</dl>
 				{%- endif -%}
 
 				{%- if event.data.description -%}
-				<p>{{ event.data.description | markdownInline | safe }}</p>
+					<p>{{ event.data.description | markdownInline | safe }}</p>
 				{%- endif -%}
 
 			</section>
